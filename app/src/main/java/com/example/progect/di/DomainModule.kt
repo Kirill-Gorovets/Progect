@@ -5,12 +5,12 @@ import com.example.progect.UseCase.GetUserNameUsecase
 import com.example.progect.UseCase.SaveUserNameUsecase
 import org.koin.dsl.module
 
-val domainModule = module{
+val domainModule = module {
 
     factory<GetUserNameUsecase> {
         GetUserNameUsecase(userRepository = get())
     }
-    factory <SaveUserNameUsecase>{
+    factory<SaveUserNameUsecase> {
 
         SaveUserNameUsecase(userRepository = get())
     }

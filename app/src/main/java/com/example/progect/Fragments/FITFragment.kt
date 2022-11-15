@@ -17,12 +17,12 @@ class FITFragment : BaseFragment<ActivityFitListBinding>() {
         container: ViewGroup?
     ): ActivityFitListBinding = ActivityFitListBinding.inflate(inflater, container, false)
 
-
     override fun ActivityFitListBinding.onBindView(saveInstanceState: Bundle?) {
         strelochka.setOnClickListener {
             navController.popBackStack()
         }
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

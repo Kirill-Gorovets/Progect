@@ -43,12 +43,12 @@ class FragmentFaculties : BaseFragment<FragmentFacultiesBinding>() {
                     "ФКНЭ",
                     R.drawable.fkn
                 ) {
-                  navController.navigate(FragmentFacultiesDirections.actionFragmentFacultiesToFKNFragment())
+                    navController.navigate(FragmentFacultiesDirections.actionFragmentFacultiesToFKNFragment())
                 },
                 FacultyItemType(
                     "ЮР ФАК",
                     R.drawable.urfack
-                ) {navController.navigate(FragmentFacultiesDirections.navigationToURFAKFragment())},
+                ) { navController.navigate(FragmentFacultiesDirections.navigationToURFAKFragment()) },
             )
         )
 

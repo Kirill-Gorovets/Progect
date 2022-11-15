@@ -4,9 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.lifecycle.ViewModelProvider
 import com.example.progect.Base.BaseFragment
-import com.example.progect.ViewModels.MainViewModel
 import com.example.progect.Base.SharedPrefUserStorage
 import com.example.progect.Domain.SaveUserNameParam
 import com.example.progect.Domain.UserName
@@ -15,6 +13,7 @@ import com.example.progect.Repository.UserRepositoryImpl
 import com.example.progect.UseCase.GetUserNameUsecase
 import com.example.progect.UseCase.LoginUseCase
 import com.example.progect.UseCase.SaveUserNameUsecase
+import com.example.progect.ViewModels.MainViewModel
 import com.example.progect.databinding.FragmentLoginBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -27,7 +26,7 @@ class FragmentLogin : BaseFragment<FragmentLoginBinding>() {
         container: ViewGroup?
     ): FragmentLoginBinding = FragmentLoginBinding.inflate(inflater, container, false)
 
-    private  val vm by viewModel<MainViewModel>()
+    private val vm by viewModel<MainViewModel>()
     private val userRepository by lazy(LazyThreadSafetyMode.NONE) {
         UserRepositoryImpl(userStorage = SharedPrefUserStorage(context = requireContext()))
     }
@@ -53,7 +52,6 @@ class FragmentLogin : BaseFragment<FragmentLoginBinding>() {
 
             val result: Boolean = saveUserNameUsecase.execute(param = params)
             textName.text = vm.saveName(name)
-
 
 
             val userCredo = UserCredo(

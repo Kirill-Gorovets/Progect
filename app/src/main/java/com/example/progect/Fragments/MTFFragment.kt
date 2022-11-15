@@ -17,7 +17,6 @@ class MTFFragment : BaseFragment<ActivityMtfListBinding>() {
         container: ViewGroup?
     ): ActivityMtfListBinding = ActivityMtfListBinding.inflate(inflater, container, false)
 
-
     override fun ActivityMtfListBinding.onBindView(saveInstanceState: Bundle?) {
         strelochkaMTF.setOnClickListener {
             navController.popBackStack()

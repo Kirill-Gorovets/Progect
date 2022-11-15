@@ -65,11 +65,11 @@ private class TimeTableItemViewHolder(parent: ViewGroup) :
         TimetableItemTypeBinding.inflate(LayoutInflater.from(parent.context), parent, false)
     ) {
     override fun TimetableItemTypeBinding.bind(value: TimeTableItemType) {
-        dayOfWeek.text=value.day
+        dayOfWeek.text = value.day
         FacultyGroup.text = value.group
         para1.text = value.class1
-        para2.text=value.class2
-        para3.text=value.class3
+        para2.text = value.class2
+        para3.text = value.class3
     }
 }
 

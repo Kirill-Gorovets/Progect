@@ -7,13 +7,13 @@ import com.example.progect.Repository.UserRepositoryImpl
 import org.koin.dsl.module
 
 
-val dataModul= module {
-    single < UserStorage>{
+val dataModul = module {
+    single<UserStorage> {
         SharedPrefUserStorage(context = get())
 
     }
 
-    single<UserRepository>{
+    single<UserRepository> {
         UserRepositoryImpl(userStorage = get())
     }
 
