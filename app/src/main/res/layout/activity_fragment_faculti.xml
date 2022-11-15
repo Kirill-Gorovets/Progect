@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="664dp"
+        android:text="Расписание"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageFIT"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="497dp"
+        android:src="@drawable/fit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageMTF"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/mtf"
+        app:layout_constraintBottom_toBottomOf="@+id/imageFIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageFIT"
+        app:layout_constraintTop_toTopOf="@id/imageFIT" />
+
+    <ImageView
+        android:id="@+id/imageUrf"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="336dp"
+        android:src="@drawable/urfack"
+        app:layout_constraintEnd_toEndOf="@id/imageFIT"
+        app:layout_constraintStart_toStartOf="@id/imageFIT"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="336dp"
+        android:src="@drawable/fkn"
+        app:layout_constraintEnd_toEndOf="@id/imageMTF"
+        app:layout_constraintStart_toEndOf="@id/imageUrf"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

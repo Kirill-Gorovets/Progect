@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/fragmentLogin">
+
+    <fragment
+        android:id="@+id/fragmentFaculties"
+        android:name="com.example.progect.Fragments.FragmentFaculties"
+        android:label="FragmentFaculties" >
+        <action
+            android:id="@+id/navigation_to_FITFragment"
+            app:destination="@id/FITFragment" />
+        <action
+            android:id="@+id/navigation_to_MTFFragment"
+            app:destination="@id/MTFFragment" />
+        <action
+            android:id="@+id/navigation_to_URFAKFragment"
+            app:destination="@id/URFAKFragment" />
+        <action
+            android:id="@+id/action_fragmentFaculties_to_FKNFragment"
+            app:destination="@id/FKNFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FITFragment"
+        android:name="com.example.progect.Fragments.FITFragment"
+        android:label="FITFragment" >
+        <action
+            android:id="@+id/navigation_to_fragmentFaculties"
+            app:destination="@id/fragmentFaculties" />
+    </fragment>
+    <fragment
+        android:id="@+id/MTFFragment"
+        android:name="com.example.progect.Fragments.MTFFragment"
+        android:label="MTFFragment" >
+        <action
+            android:id="@+id/action_MTFFragment_to_fragmentFaculties"
+            app:destination="@id/fragmentFaculties" />
+    </fragment>
+    <fragment
+        android:id="@+id/URFAKFragment"
+        android:name="com.example.progect.Fragments.URFAKFragment"
+        android:label="URFAKFragment" >
+        <action
+            android:id="@+id/action_URFAKFragment_to_fragmentFaculties"
+            app:destination="@id/fragmentFaculties" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.example.progect.Fragments.FragmentLogin"
+        android:label="FragmentLogin" >
+        <action
+            android:id="@+id/navigation_to_fragmentFaculties"
+            app:destination="@id/fragmentFaculties" />
+    </fragment>
+    <fragment
+        android:id="@+id/FKNFragment"
+        android:name="com.example.progect.Fragments.FKNFragment"
+        android:label="FKNFragment" >
+        <action
+            android:id="@+id/navigation_to_fragmentFaculties"
+            app:destination="@id/fragmentFaculties" />
+    </fragment>
+</navigation>

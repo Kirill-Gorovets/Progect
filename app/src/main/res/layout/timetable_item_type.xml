@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey">
+
+            <TextView
+                android:id="@+id/dayOfWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Понедельник"
+                android:textColor="@color/black"
+                android:textSize="26dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/FacultyGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:text="22 CT"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:src="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/FacultyGroup"
+                app:layout_constraintBottom_toTopOf="@id/para_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/para_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Физика(лекция) Окунев Д.О. ауд. 36н"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/FacultyGroup"
+                app:layout_constraintStart_toStartOf="@id/FacultyGroup"
+                app:layout_constraintTop_toBottomOf="@+id/FacultyGroup" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:src="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/para_1"
+                app:layout_constraintBottom_toTopOf="@id/para_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:src="@color/black"
+                app:layout_constraintBottom_toTopOf="@id/para_3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/para_2"
+                app:layout_constraintVertical_bias="0.588" />
+
+            <TextView
+                android:id="@+id/para_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="МатематикаЗавистовская Т.И. ауд. 335н"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/para_1"
+                app:layout_constraintStart_toStartOf="@id/para_1"
+                app:layout_constraintTop_toBottomOf="@id/para_1" />
+
+            <TextView
+                android:id="@+id/para_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Математика(лекция) Папкович М.В. ауд. 327н"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/para_2"
+                app:layout_constraintStart_toStartOf="@id/para_2"
+                app:layout_constraintTop_toBottomOf="@id/para_2" />
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:src="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/para_3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
