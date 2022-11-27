@@ -37,7 +37,7 @@ class FragmentFaculties : BaseFragment<FragmentFacultiesBinding>() {
                     R.drawable.mtf
 
                 ) {
-                    navController.navigate(FragmentFacultiesDirections.navigationToMTFFragment())
+                    navController.navigate(FragmentFacultiesDirections.navigationToMTFGroupsFragment())
                 },
                 FacultyItemType(
                     "ФКНЭ",

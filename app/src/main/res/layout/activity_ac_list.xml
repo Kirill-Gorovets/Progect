@@ -40,16 +40,13 @@
 
     <TextView
         android:id="@+id/TextMTF"
-        android:layout_width="63dp"
-        android:layout_height="38dp"
-        android:text="МТФ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22 AC"
         android:textColor="@color/black"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="@id/strelochkaMTF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/strelochkaMTF"
-        />
-
-
+        app:layout_constraintTop_toTopOf="@id/strelochkaMTF" />
 </androidx.constraintlayout.widget.ConstraintLayout>

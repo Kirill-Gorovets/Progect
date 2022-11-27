@@ -9,16 +9,16 @@ import com.example.progect.Base.BaseFragment
 import com.example.progect.Base.MyAdapter2
 import com.example.progect.ItemTypes.TimeTableItemType
 import com.example.progect.R
-import com.example.progect.databinding.ActivityMtfListBinding
+import com.example.progect.databinding.ActivityMaListBinding
 
-class MTFFragment : BaseFragment<ActivityMtfListBinding>() {
+class MAFragment : BaseFragment<ActivityMaListBinding>() {
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
-    ): ActivityMtfListBinding = ActivityMtfListBinding.inflate(inflater, container, false)
+    ): ActivityMaListBinding = ActivityMaListBinding.inflate(inflater, container, false)
 
-    override fun ActivityMtfListBinding.onBindView(saveInstanceState: Bundle?) {
-        strelochkaMTF.setOnClickListener {
+    override fun ActivityMaListBinding.onBindView(saveInstanceState: Bundle?) {
+        strelochkaMA.setOnClickListener {
             navController.popBackStack()
         }
     }

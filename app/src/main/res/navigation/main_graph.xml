@@ -11,15 +11,16 @@
         <action
             android:id="@+id/navigation_to_FITFragment"
             app:destination="@id/FITFragment" />
-        <action
-            android:id="@+id/navigation_to_MTFFragment"
-            app:destination="@id/MTFFragment" />
+
         <action
             android:id="@+id/navigation_to_URFAKFragment"
             app:destination="@id/URFAKFragment" />
         <action
             android:id="@+id/action_fragmentFaculties_to_FKNFragment"
             app:destination="@id/FKNFragment" />
+        <action
+            android:id="@+id/navigation_to_MTFGroupsFragment"
+            app:destination="@id/MTFGroupsFragment" />
     </fragment>
     <fragment
         android:id="@+id/FITFragment"
@@ -30,12 +31,13 @@
             app:destination="@id/fragmentFaculties" />
     </fragment>
     <fragment
-        android:id="@+id/MTFFragment"
-        android:name="com.example.progect.Fragments.MTFFragment"
+        android:id="@+id/AcFragment"
+        android:name="com.example.progect.Fragments.ACFragment"
         android:label="MTFFragment" >
+
         <action
-            android:id="@+id/action_MTFFragment_to_fragmentFaculties"
-            app:destination="@id/fragmentFaculties" />
+            android:id="@+id/action_MTFFragment_to_MTFGroupsFragment"
+            app:destination="@id/MTFGroupsFragment" />
     </fragment>
     <fragment
         android:id="@+id/URFAKFragment"
@@ -60,5 +62,57 @@
         <action
             android:id="@+id/navigation_to_fragmentFaculties"
             app:destination="@id/fragmentFaculties" />
+    </fragment>
+    <fragment
+        android:id="@+id/MTFGroupsFragment"
+        android:name="com.example.progect.Fragments.MTFGroupsFragment"
+        android:label="MTFGroupsFragment" >
+        <action
+            android:id="@+id/navigate_to_ACFragment"
+            app:destination="@id/AcFragment" />
+        <action
+            android:id="@+id/navigate_to_MAFragment"
+            app:destination="@id/MAFragment" />
+        <action
+            android:id="@+id/navigate_to_TNGFragment"
+            app:destination="@id/TNGFragment" />
+        <action
+            android:id="@+id/navigate_to_TMFragment"
+            app:destination="@id/TMFragment" />
+        <action
+            android:id="@+id/navigate_to_XTFragment"
+            app:destination="@id/XTFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MAFragment"
+        android:name="com.example.progect.Fragments.MAFragment"
+        android:label="MAFragment" >
+        <action
+            android:id="@+id/navigate_to_MTFGroupsFragment"
+            app:destination="@id/MTFGroupsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TNGFragment"
+        android:name="com.example.progect.Fragments.TNGFragment"
+        android:label="TNGFragment" >
+        <action
+            android:id="@+id/action_TNGFragment_to_MTFGroupsFragment"
+            app:destination="@id/MTFGroupsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TMFragment"
+        android:name="com.example.progect.Fragments.TMFragment"
+        android:label="TMFragment" >
+        <action
+            android:id="@+id/action_TMFragment_to_MTFGroupsFragment"
+            app:destination="@id/MTFGroupsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/XTFragment"
+        android:name="com.example.progect.Fragments.XTFragment"
+        android:label="XTFragment" >
+        <action
+            android:id="@+id/action_XTFragment_to_MTFGroupsFragment"
+            app:destination="@id/MTFGroupsFragment" />
     </fragment>
 </navigation>
